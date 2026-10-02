@@ -651,3 +651,25 @@ footer{
     font-size:18px;
 
 }
+
+.animated-role {
+    min-height: 45px;
+}
+
+#role-text {
+    display: inline-block;
+    border-right: 3px solid currentColor;
+    padding-right: 5px;
+    white-space: nowrap;
+    animation: blinkCursor 0.7s infinite;
+}
+
+@keyframes blinkCursor {
+    0%, 50% {
+        border-color: currentColor;
+    }
+
+    51%, 100% {
+        border-color: transparent;
+    }
+}
